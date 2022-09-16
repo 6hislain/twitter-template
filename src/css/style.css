@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.menu {
+    @apply py-4;
+}
+
+.menu-item {
+    @apply text-lg py-3 px-6 my-1 w-fit rounded-full;
+}
+
+.menu-item:hover {
+    @apply bg-slate-200 transition duration-300 ease-in-out;
+}
+
+.btn-tweet {
+    @apply bg-blue-500 text-white p-3 w-full rounded-full shadow-lg font-bold;
+}
