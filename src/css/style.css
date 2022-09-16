@@ -11,10 +11,23 @@
     @apply text-lg py-3 px-6 my-1 w-fit rounded-full;
 }
 
-.menu-item:hover {
+.menu-item:hover,
+.btn-upload:hover {
     @apply bg-slate-200 transition duration-300 ease-in-out;
 }
 
 .btn-tweet {
     @apply bg-blue-500 text-white p-3 w-full rounded-full shadow-lg font-bold;
+}
+
+.btn-small-tweet {
+    @apply bg-blue-500 text-white py-2 px-4 rounded-full shadow-lg font-bold;
+}
+
+.btn-upload {
+    @apply text-blue-500 py-2 px-4 rounded-full;
+}
+
+.textarea {
+    @apply w-full p-4 outline-none text-base;
 }
