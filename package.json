@@ -1,5 +1,26 @@
 {
+  "name": "twitter-template",
+  "version": "0.1.0",
+  "description": "Template inspired by Twitter",
+  "scripts": {
+    "serve": "npx serve ./src",
+    "watch": "npx tailwindcss -i ./src/css/style.css -o ./src/dist/style.css --watch",
+    "minify": "npx tailwindcss -i ./src/css/style.css -o ./src/dist/style.min.css --minify",
+    "dev": "concurrently 'npm run watch' 'npm run serve'"
+  },
+  "keywords": [
+    "tailwindcss",
+    "html-template"
+  ],
+  "author": "6hslain",
+  "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.1.8"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
   }
 }
