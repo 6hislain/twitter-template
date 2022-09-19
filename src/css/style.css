@@ -2,24 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-.menu {
+.left-menu {
     @apply py-4;
 }
 
-.menu-item {
+.left-menu-item {
     @apply text-lg py-3 px-6 my-1 w-fit rounded-full;
 }
 
-.menu-item.active {
+.left-menu-item.active {
     @apply font-bold text-blue-500;
 }
 
-.menu-item:hover,
+.left-menu-item:hover,
 .btn-action:hover {
     @apply bg-slate-200 transition duration-300 ease-in-out;
 }
 
-.menu-item:active,
+.right-menu-item {
+    @apply px-4 py-2 text-sm;
+}
+
+.right-menu-item:hover {
+    @apply bg-slate-300 transition duration-300 ease-in-out;
+}
+
+.left-menu-item:active,
 .btn-tweet:active,
 .btn-action:active,
 .btn-small-tweet:active {
@@ -40,6 +48,10 @@
 
 .textarea {
     @apply w-full p-4 outline-none text-base;
+}
+
+.input {
+    @apply w-full py-2 px-5 outline-none text-base bg-slate-200 rounded-full;
 }
 
 .post {
