@@ -11,9 +11,9 @@
 
   <body>
     <div class="container mx-auto">
-      <div class="grid grid-cols-5 gap-4">
+      <div class="grid grid-cols-12 gap-4">
         <!-- START: left menu -->
-        <div class="p-5">
+        <div class="col-span-2 p-5 max-h-screen overflow-hidden">
           <div class="flex flex-col space-y-3 justify-between h-full">
             <div>
               <h4 class="text-2xl font-bold">Fake Twitter</h4>
@@ -58,13 +58,15 @@
               <button class="btn-tweet">Tweet</button>
             </div>
             <div class="flex flex-row space-x-3 truncate">
-              <img
-                src="https://picsum.photos/id/237/300/300"
-                alt="6hislain"
-                width="50"
-                height="50"
-                class="rounded-full"
-              />
+              <div class="my-auto">
+                <img
+                  src="https://picsum.photos/id/237/300/300"
+                  alt="6hislain"
+                  width="32"
+                  height="32"
+                  class="rounded-full"
+                />
+              </div>
               <div class="my-auto">
                 <span class="block text-base font-bold">
                   Mugemana Ghislain
@@ -76,7 +78,9 @@
         </div>
         <!-- END: left menu -->
         <!-- START: main content -->
-        <div class="col-span-3 border-x-2 py-5 min-h-screen overflow-y-auto">
+        <div
+          class="col-span-7 border-x-2 py-5 max-h-screen h-screen overflow-y-auto"
+        >
           <div class="flex flex-row space-x-3 px-3 justify-between mb-3">
             <h4 class="text-lg font-bold my-auto">Home</h4>
             <button class="btn-action"><i class="lni lni-star"></i></button>
@@ -277,7 +281,7 @@
         </div>
         <!-- END: main content -->
         <!-- START: right menu -->
-        <div class="m-5">
+        <div class="col-span-3 p-5 max-h-screen overflow-hidden">
           <form action="#">
             <input
               type="search"
@@ -306,13 +310,15 @@
             <ul class="right-menu">
               <li class="right-menu-item">
                 <div class="flex flex-row space-x-3 truncate">
-                  <img
-                    src="https://picsum.photos/id/237/300/300"
-                    alt="6hislain"
-                    width="50"
-                    height="50"
-                    class="rounded-full"
-                  />
+                  <div class="my-auto">
+                    <img
+                      src="https://picsum.photos/id/237/300/300"
+                      alt="6hislain"
+                      width="32"
+                      height="32"
+                      class="rounded-full"
+                    />
+                  </div>
                   <div class="my-auto">
                     <span class="block text-base font-bold">
                       Mugemana Ghislain
@@ -323,13 +329,15 @@
               </li>
               <li class="right-menu-item">
                 <div class="flex flex-row space-x-3 truncate">
-                  <img
-                    src="https://picsum.photos/id/237/300/300"
-                    alt="6hislain"
-                    width="50"
-                    height="50"
-                    class="rounded-full"
-                  />
+                  <div class="my-auto">
+                    <img
+                      src="https://picsum.photos/id/237/300/300"
+                      alt="6hislain"
+                      width="32"
+                      height="32"
+                      class="rounded-full"
+                    />
+                  </div>
                   <div class="my-auto">
                     <span class="block text-base font-bold">
                       Mugemana Ghislain
@@ -340,13 +348,15 @@
               </li>
               <li class="right-menu-item">
                 <div class="flex flex-row space-x-3 truncate">
-                  <img
-                    src="https://picsum.photos/id/237/300/300"
-                    alt="6hislain"
-                    width="50"
-                    height="50"
-                    class="rounded-full"
-                  />
+                  <div class="my-auto">
+                    <img
+                      src="https://picsum.photos/id/237/300/300"
+                      alt="6hislain"
+                      width="32"
+                      height="32"
+                      class="rounded-full"
+                    />
+                  </div>
                   <div class="my-auto">
                     <span class="block text-base font-bold">
                       Mugemana Ghislain
