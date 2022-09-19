@@ -1,7 +1,7 @@
 {
   "name": "twitter-template",
   "version": "0.1.0",
-  "description": "Template inspired by Twitter",
+  "description": "Template inspired by twitter",
   "scripts": {
     "serve": "npx serve ./src",
     "watch": "npx tailwindcss -i ./src/css/style.css -o ./src/dist/style.css --watch",
@@ -15,6 +15,8 @@
   "author": "6hslain",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^7.4.0",
+    "prettier": "^2.7.1",
     "tailwindcss": "^3.1.8"
   },
   "prettier": {
