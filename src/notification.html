@@ -6,44 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notifications &middot; Fake Twitter</title>
     <link href="./dist/style.css" rel="stylesheet" />
+    <link href="./dist/lineicons.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="container mx-auto">
       <div class="grid grid-cols-5 gap-4">
         <!-- START: left menu -->
-        <div class="min-h-screen p-5">
+        <div class="p-5">
           <div class="flex flex-col space-y-3 justify-between h-full">
             <div>
               <h4 class="text-2xl font-bold">Fake Twitter</h4>
-              <ul class="menu">
-                <li class="menu-item"><a href="home.html">Home</a></li>
-                <li class="menu-item"><a href="explore.html">Explore</a></li>
-                <li class="menu-item">
-                  <a href="community.html">Communities</a>
+              <ul class="left-menu">
+                <li class="left-menu-item">
+                  <a href="home.html"><i class="lni lni-home mr-2"></i> Home</a>
                 </li>
-                <li class="menu-item active">
-                  <a href="notification.html">Notifications</a>
+                <li class="left-menu-item">
+                  <a href="explore.html">
+                    <i class="lni lni-layers mr-2"></i> Explore
+                  </a>
                 </li>
-                <li class="menu-item"><a href="messages.html">Messages</a></li>
-                <li class="menu-item">
-                  <a href="bookmarks.html">Bookmarks</a>
+                <li class="left-menu-item">
+                  <a href="community.html">
+                    <i class="lni lni-users mr-2"></i> Communities
+                  </a>
                 </li>
-                <li class="menu-item"><a href="profile.html">Profile</a></li>
-                <li class="menu-item"><a href="#">More</a></li>
+                <li class="left-menu-item active">
+                  <a href="notification.html">
+                    <i class="lni lni-alarm mr-2"></i> Notifications
+                  </a>
+                </li>
+                <li class="left-menu-item">
+                  <a href="messages.html">
+                    <i class="lni lni-bubble mr-2"></i> Messages
+                  </a>
+                </li>
+                <li class="left-menu-item">
+                  <a href="bookmarks.html">
+                    <i class="lni lni-bookmark mr-2"></i> Bookmarks
+                  </a>
+                </li>
+                <li class="left-menu-item">
+                  <a href="profile.html">
+                    <i class="lni lni-user mr-2"></i> Profile
+                  </a>
+                </li>
+                <li class="left-menu-item">
+                  <a href="#"><i class="lni lni-menu mr-2"></i> More</a>
+                </li>
               </ul>
               <button class="btn-tweet">Tweet</button>
             </div>
-            <div class="flex flex-row space-x-3">
+            <div class="flex flex-row space-x-3 truncate">
               <img
-                src="https://images.unsplash.com/photo-1485423036251-8b2a2909899f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                src="https://picsum.photos/id/237/300/300"
                 alt="6hislain"
                 width="50"
                 height="50"
                 class="rounded-full"
               />
               <div class="my-auto">
-                <span class="w-full text-base font-bold">
+                <span class="block text-base font-bold">
                   Mugemana Ghislain
                 </span>
                 <span class="text-sm text-gray-500">@6hislain</span>
@@ -53,48 +76,17 @@
         </div>
         <!-- END: left menu -->
         <!-- START: main content -->
-        <div class="col-span-3 border-x-2 max-h-screen py-5 overflow-y-auto">
+        <div class="col-span-3 border-x-2 py-5 min-h-screen overflow-y-auto">
           <div class="flex flex-row space-x-3 px-3 justify-between mb-3">
-            <h4 class="text-lg font-bold">Notifications</h4>
-            <button class="btn-action">stars</button>
-          </div>
-          <div class="flex flex-row space-x-3 px-5">
-            <div>
-              <img
-                src="https://images.unsplash.com/photo-1485423036251-8b2a2909899f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                alt="6hislain"
-                width="50"
-                height="50"
-                class="rounded-full"
-              />
-            </div>
-            <div class="w-full">
-              <textarea
-                name="tweet"
-                rows="3"
-                class="textarea"
-                placeholder="Write something interesting"
-              ></textarea>
-              <div
-                class="flex flex-row space-x-3 justify-between border-t-2 py-3"
-              >
-                <div class="flex flex-row space-x-3">
-                  <button class="btn-action">image</button>
-                  <button class="btn-action">gif</button>
-                  <button class="btn-action">poll</button>
-                  <button class="btn-action">smiley</button>
-                  <button class="btn-action">location</button>
-                </div>
-                <button class="btn-small-tweet">tweet</button>
-              </div>
-            </div>
+            <h4 class="text-lg font-bold my-auto">Notifications</h4>
+            <button class="btn-action"><i class="lni lni-cog"></i></button>
           </div>
           <div>
             <div class="post">
               <div class="flex flex-row space-x-3">
                 <div>
                   <img
-                    src="https://images.unsplash.com/photo-1485423036251-8b2a2909899f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                    src="https://picsum.photos/id/237/300/300"
                     alt="6hislain"
                     width="50"
                     height="59"
@@ -109,7 +101,9 @@
                         @6hislain &middot; 20s
                       </span>
                     </div>
-                    <button class="btn-action">menu</button>
+                    <button class="btn-action">
+                      <i class="lni lni-more"></i>
+                    </button>
                   </div>
                   <div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -122,10 +116,18 @@
                     dolor? Dolorem illo voluptates ipsum voluptatum!
                   </div>
                   <div class="flex flex-row space-x-3 mt-3">
-                    <button class="btn-action">comment</button>
-                    <button class="btn-action">retweet</button>
-                    <button class="btn-action">like</button>
-                    <button class="btn-action">share</button>
+                    <button class="btn-action">
+                      <i class="lni lni-comments"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="lni lni-reload"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="lni lni-heart"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="lni lni-share-alt-1"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -134,7 +136,7 @@
               <div class="flex flex-row space-x-3">
                 <div>
                   <img
-                    src="https://images.unsplash.com/photo-1485423036251-8b2a2909899f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                    src="https://picsum.photos/id/237/300/300"
                     alt="6hislain"
                     width="50"
                     height="59"
@@ -149,7 +151,9 @@
                         @6hislain &middot; 20s
                       </span>
                     </div>
-                    <button class="btn-action">menu</button>
+                    <button class="btn-action">
+                      <i class="lni lni-more"></i>
+                    </button>
                   </div>
                   <div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -162,10 +166,18 @@
                     dolor? Dolorem illo voluptates ipsum voluptatum!
                   </div>
                   <div class="flex flex-row space-x-3 mt-3">
-                    <button class="btn-action">comment</button>
-                    <button class="btn-action">retweet</button>
-                    <button class="btn-action">like</button>
-                    <button class="btn-action">share</button>
+                    <button class="btn-action">
+                      <i class="lni lni-comments"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="lni lni-reload"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="lni lni-heart"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="lni lni-share-alt-1"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -174,7 +186,7 @@
               <div class="flex flex-row space-x-3">
                 <div>
                   <img
-                    src="https://images.unsplash.com/photo-1485423036251-8b2a2909899f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                    src="https://picsum.photos/id/237/300/300"
                     alt="6hislain"
                     width="50"
                     height="59"
@@ -189,7 +201,9 @@
                         @6hislain &middot; 20s
                       </span>
                     </div>
-                    <button class="btn-action">menu</button>
+                    <button class="btn-action">
+                      <i class="lni lni-more"></i>
+                    </button>
                   </div>
                   <div>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -202,10 +216,18 @@
                     dolor? Dolorem illo voluptates ipsum voluptatum!
                   </div>
                   <div class="flex flex-row space-x-3 mt-3">
-                    <button class="btn-action">comment</button>
-                    <button class="btn-action">retweet</button>
-                    <button class="btn-action">like</button>
-                    <button class="btn-action">share</button>
+                    <button class="btn-action">
+                      <i class="lni lni-comments"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="lni lni-reload"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="lni lni-heart"></i>
+                    </button>
+                    <button class="btn-action">
+                      <i class="lni lni-share-alt-1"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -215,10 +237,86 @@
         <!-- END: main content -->
         <!-- START: right menu -->
         <div class="m-5">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste
-          dignissimos deserunt sed minus saepe ea earum hic ipsum culpa animi
-          distinctio nisi, assumenda deleniti minima quae. Fugit, omnis ratione.
-          A?
+          <form action="#">
+            <input
+              type="search"
+              name="search"
+              class="input"
+              placeholder="Search..."
+            />
+          </form>
+          <div class="bg-slate-200 my-3 rounded-xl">
+            <h4 class="text-xl font-bold px-4 py-2">Trends</h4>
+            <ul class="right-menu">
+              <li class="right-menu-item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              </li>
+              <li class="right-menu-item">
+                eaque cum ab aperiam suscipit amet cumque et voluptas aut quam
+              </li>
+              <li class="right-menu-item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              </li>
+            </ul>
+            <h4 class="text-base px-4 py-2 text-blue-500">Show more</h4>
+          </div>
+          <div class="bg-slate-200 my-3 rounded-xl">
+            <h4 class="text-xl font-bold px-4 py-2">Who to follow</h4>
+            <ul class="right-menu">
+              <li class="right-menu-item">
+                <div class="flex flex-row space-x-3 truncate">
+                  <img
+                    src="https://picsum.photos/id/237/300/300"
+                    alt="6hislain"
+                    width="50"
+                    height="50"
+                    class="rounded-full"
+                  />
+                  <div class="my-auto">
+                    <span class="block text-base font-bold">
+                      Mugemana Ghislain
+                    </span>
+                    <span class="text-sm text-gray-500">@6hislain</span>
+                  </div>
+                </div>
+              </li>
+              <li class="right-menu-item">
+                <div class="flex flex-row space-x-3 truncate">
+                  <img
+                    src="https://picsum.photos/id/237/300/300"
+                    alt="6hislain"
+                    width="50"
+                    height="50"
+                    class="rounded-full"
+                  />
+                  <div class="my-auto">
+                    <span class="block text-base font-bold">
+                      Mugemana Ghislain
+                    </span>
+                    <span class="text-sm text-gray-500">@6hislain</span>
+                  </div>
+                </div>
+              </li>
+              <li class="right-menu-item">
+                <div class="flex flex-row space-x-3 truncate">
+                  <img
+                    src="https://picsum.photos/id/237/300/300"
+                    alt="6hislain"
+                    width="50"
+                    height="50"
+                    class="rounded-full"
+                  />
+                  <div class="my-auto">
+                    <span class="block text-base font-bold">
+                      Mugemana Ghislain
+                    </span>
+                    <span class="text-sm text-gray-500">@6hislain</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <h4 class="text-base px-4 py-2 text-blue-500">Show more</h4>
+          </div>
         </div>
         <!-- END: right menu -->
       </div>
