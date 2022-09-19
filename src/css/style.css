@@ -57,3 +57,15 @@
 .post {
     @apply border-t-2 p-3 text-gray-700;
 }
+
+::-webkit-scrollbar {
+    @apply w-1.5;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-slate-400 outline-slate-600;
+}
