@@ -6,6 +6,7 @@
 
 ### Checklist
 
+- [x] login page
 - [ ] home page
 - [ ] navigation
 - [ ] responsiveness

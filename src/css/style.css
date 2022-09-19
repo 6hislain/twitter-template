@@ -7,7 +7,7 @@
 }
 
 .left-menu-item {
-    @apply text-lg py-3 px-6 w-fit rounded-full;
+    @apply text-lg my-1 py-2 px-6 w-fit rounded-full;
 }
 
 .left-menu-item.active {

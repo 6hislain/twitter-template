@@ -10,28 +10,36 @@
   </head>
 
   <body>
-    <div class="">
-      <div class="grid grid-cols-2 gap-4">
-        <div class="wallpaper min-h-screen"></div>
-        <div class="flex justify-center items-center">
-          <div class="w-96">
-            <h4 class="text-2xl font-bold mb-2 text-center">Join today</h4>
-            <form action="#">
-              <input
-                class="input mb-2"
-                type="text"
-                name="username"
-                placeholder="email, username"
-              />
-              <input
-                class="input mb-2"
-                type="password"
-                name="password"
-                placeholder="password"
-              />
-              <a href="home.html" class="btn-blue">Login</a>
-            </form>
-          </div>
+    <div class="grid md:grid-cols-2">
+      <div class="wallpaper md:min-h-screen sm:h-0"></div>
+      <div class="flex justify-center items-center min-h-screen">
+        <div class="w-96 text-center mx-2">
+          <h4 class="text-2xl font-bold mb-2">Join today</h4>
+          <form action="#">
+            <input
+              class="input mb-2"
+              type="text"
+              name="username"
+              placeholder="email, username"
+            />
+            <input
+              class="input mb-2"
+              type="password"
+              name="password"
+              placeholder="password"
+            />
+            <a href="home.html" class="btn-blue">Login</a>
+          </form>
+          <h5 class="text-sm text-gray-700 mt-6">
+            Crafted by
+            <a
+              href="https://github.com/6hislain/twitter-template"
+              target="_blank"
+              class="text-blue-500 font-bold"
+            >
+              6hislain
+            </a>
+          </h5>
         </div>
       </div>
     </div>
