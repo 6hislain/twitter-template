@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 .left-menu {
-    @apply py-4;
+  @apply py-4;
 }
 
 .left-menu-item {
-    @apply text-lg my-1 py-2 px-6 w-fit rounded-full;
+  @apply text-lg my-1 py-2 px-6 w-fit rounded-full;
 }
 
 .left-menu-item.active {
-    @apply font-bold text-blue-500;
+  @apply font-bold text-blue-500;
 }
 
 .left-menu-item:hover,
 .btn-action:hover {
-    @apply bg-slate-200 transition duration-300 ease-in-out;
+  @apply bg-slate-200 transition duration-300 ease-in-out;
 }
 
 .right-menu-item {
-    @apply px-4 py-2 text-sm;
+  @apply px-4 py-2 text-sm cursor-pointer;
 }
 
 .right-menu-item:hover {
-    @apply bg-slate-300 transition duration-300 ease-in-out;
+  @apply bg-slate-300 transition duration-300 ease-in-out;
 }
 
 .left-menu-item:active,
@@ -32,55 +32,55 @@
 .btn-tweet:active,
 .btn-action:active,
 .btn-small-tweet:active {
-    @apply scale-95 transition duration-200 ease-in-out;
+  @apply scale-95 transition duration-200 ease-in-out;
 }
 
 .btn-tweet {
-    @apply bg-blue-500 text-white p-3 w-full rounded-full shadow-lg font-bold;
+  @apply bg-blue-500 text-white p-3 w-full rounded-full shadow-lg font-bold;
 }
 
 .btn-blue {
-    @apply bg-blue-500 text-white p-3 block rounded-full shadow-lg font-bold text-center;
+  @apply bg-blue-500 text-white p-3 block rounded-full shadow-lg font-bold text-center;
 }
 
 .btn-small-tweet {
-    @apply bg-blue-500 text-white py-2 px-4 rounded-full font-bold;
+  @apply bg-blue-500 text-white py-2 px-4 rounded-full font-bold;
 }
 
 .btn-action {
-    @apply text-blue-500 py-2 px-4 rounded-full;
+  @apply text-blue-500 py-2 px-4 rounded-full;
 }
 
 .textarea {
-    @apply w-full p-4 outline-none text-base;
+  @apply w-full p-4 outline-none text-base;
 }
 
 .input {
-    @apply w-full py-2 px-5 outline-none text-base bg-slate-200 rounded-full;
+  @apply w-full py-2 px-5 outline-none text-base bg-slate-200 rounded-full;
 }
 
 .input:focus {
-    @apply ring;
+  @apply ring;
 }
 
 .post {
-    @apply border-t-2 p-3 text-gray-700;
+  @apply border-t-2 p-3 text-gray-700;
 }
 
 .wallpaper {
-    background-image: url(https://picsum.photos/id/1018/800/800);
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url(https://picsum.photos/id/1018/800/800);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ::-webkit-scrollbar {
-    @apply w-1.5;
+  @apply w-1.5;
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-    @apply bg-slate-400 outline-slate-600;
+  @apply bg-slate-400 outline-slate-600;
 }

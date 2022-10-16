@@ -10,3 +10,5 @@
 - [ ] home page
 - [ ] navigation
 - [ ] responsiveness
+- [ ] popup menu
+- [ ] customize appearance
